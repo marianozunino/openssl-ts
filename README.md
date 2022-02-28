@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/marianozunino/openssl-ts/badge.svg)](https://coveralls.io/github/marianozunino/openssl-ts)
 ![node-current](https://img.shields.io/node/v/openssl-ts)
 ![npm type definitions](https://img.shields.io/npm/types/openssl-ts)
-![current-version](https://img.shields.io/badge/dynamic/json?label=current-version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarianozunino%2Fopenssl-ts%2Fmaster%2Fpackage.json)
+[![current-version](https://img.shields.io/badge/dynamic/json?label=current-version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarianozunino%2Fopenssl-ts%2Fmaster%2Fpackage.json)](https://npmjs.com/package/openssl-ts)
 # Openssl Ts
 
 Openssl-ts is a modern openssl wrapper written in typescript with 0 dependencies.
