@@ -1,9 +1,12 @@
 [![build](https://github.com/marianozunino/morpheus/actions/workflows/build_deploy.yml/badge.svg)](https://github.com/marianozunino/morpheus/actions/workflows/build_deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
+[![Coverage Status](https://coveralls.io/repos/github/marianozunino/openssl-ts/badge.svg)](https://coveralls.io/github/marianozunino/openssl-ts)
+![node-current](https://img.shields.io/node/v/openssl-ts)
+![npm type definitions](https://img.shields.io/npm/types/openssl-ts)
+![current-version](https://img.shields.io/badge/dynamic/json?label=current-version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarianozunino%2Fopenssl-ts%2Fmaster%2Fpackage.json)
 # Openssl Ts
 
-openssl-ts is a modern openssl wrapper written in typescript with 0 dependencies.
+Openssl-ts is a modern openssl wrapper written in typescript with 0 dependencies.
 
 This library is not responsible of doing any filesystem operations (read/write).
 It just handles the openssl calls.
