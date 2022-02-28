@@ -35,6 +35,4 @@ lerna-debug.log*
 !.vscode/extensions.json
 .env
 
-neo4j
-
-.morpheus.json
+.tsbuildinfo
