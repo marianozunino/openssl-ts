@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`openssl should execute openssl without errors should execute openssl without errors 1`] = `""`;
+
+exports[`openssl should execute openssl without errors smime verify should support smime verify action 1`] = `
+"Verification successful
+<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<!DOCTYPE plist PUBLIC \\"-//Apple//DTD PLIST 1.0//EN\\" \\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\">
+<plist version=\\"1.0\\">
+<dict>
+	<key>AppIDName</key>
+	<string>LesDocksMarseille</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+	<string>B7U2JQ28D6</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2016-05-02T09:13:29Z</date>
+	<key>Platform</key>
+	<array>
+		<string>iOS</string>
+	</array>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFoTCCBImgAwIBAgIIadMmad9a8Q8wDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTYwNTAyMDgzNzI0WhcNMTcwNTAyMDgzNzI0WjCBlDEaMBgGCgmSJomT8ixkAQEMCkI3VTJKUTI4RDYxOjA4BgNVBAMMMWlQaG9uZSBEaXN0cmlidXRpb246IENhcmxpcGEgU3lzdGVtcyAoQjdVMkpRMjhENikxEzARBgNVBAsMCkI3VTJKUTI4RDYxGDAWBgNVBAoMD0NhcmxpcGEgU3lzdGVtczELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDMv9H6gI3Wd0IWovykpvFMSuySp8T0askMS3AfNlQLN7n7Q3J5ptyZ/OvH4rJcd7t4HOuy6Nac6vY0pIMmJsTc470X51ThTshTHcfoaA8MIYvuO3SDFJZBAmv84Yryzk91CrKUTucJmums2m7R+r0ial9fAitBQqNi5oYlaUlC9YzDv+tPwa20mhYC81Orhlh/ZKuNml73UCkrB2G1vunFoympnpCDfPR+OGz9WKQeyJpeuiIbzjJ0hmqqDhsbGfQYkeiW9i6XxQ1+y7wxXHfxfC8Uh+JvLMZ5X77LKmwkGmWLT3J6DBNqtBEEl7wn7eiJtLOLSqdQm+Qa3DbJxL9NAgMBAAGjggHxMIIB7TAdBgNVHQ4EFgQUmsLaBz9jQUGzXOrZHeqsXQbxqgswDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBSIJxcJqbYYYIvs67r2R1nFUlSjtzCCAQ8GA1UdIASCAQYwggECMIH/BgkqhkiG92NkBQEwgfEwgcMGCCsGAQUFBwICMIG2DIGzUmVsaWFuY2Ugb24gdGhpcyBjZXJ0aWZpY2F0ZSBieSBhbnkgcGFydHkgYXNzdW1lcyBhY2NlcHRhbmNlIG9mIHRoZSB0aGVuIGFwcGxpY2FibGUgc3RhbmRhcmQgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgdXNlLCBjZXJ0aWZpY2F0ZSBwb2xpY3kgYW5kIGNlcnRpZmljYXRpb24gcHJhY3RpY2Ugc3RhdGVtZW50cy4wKQYIKwYBBQUHAgEWHWh0dHA6Ly93d3cuYXBwbGUuY29tL2FwcGxlY2EvME0GA1UdHwRGMEQwQqBAoD6GPGh0dHA6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2NlcnRpZmljYXRpb25hdXRob3JpdHkvd3dkcmNhLmNybDAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwMwEwYKKoZIhvdjZAYBBAEB/wQCBQAwDQYJKoZIhvcNAQEFBQADggEBAI+5Whb0zG+eeuajCnPazPtY0bcODEG4SBjWgedcv1aSHlaZ1dELdWtZXoaRfKnrOLu/duY8c3yjidVKNlMS/+stIq+BDgyc62uZhb5O1Z3MHtHCqvixutXwyzXIF+Lw6c/f1wRn/JYK6rIzxTWGGnb25sHaSscUGcL/VYm86I4tkACUCmk/qwTTJNb9PzYvubVtNv72XqT4KhgP1SGzJD9N8daID3kmctuNLdHe0CAottPuEbLOB59A/qfSrE4zExjYw66L235pmxNHE58u8Aecwkn+jzOmYwcgA6dd8aLlo0vLeIaXVjzMicM3Pn4XoIJGGdY2VuiaxL6cAIqmsW4=</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>B7U2JQ28D6.*</string>		
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>B7U2JQ28D6.com.carlipa.LesDocksMarseille</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>B7U2JQ28D6</string>
+		<key>beta-reports-active</key>
+		<true/>
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2017-05-02T08:37:24Z</date>
+	<key>Name</key>
+	<string>foo</string>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>B7U2JQ28D6</string>
+	</array>
+	<key>TeamName</key>
+	<string>Carlipa Systems</string>
+	<key>TimeToLive</key>
+	<integer>364</integer>
+	<key>UUID</key>
+	<string>a75f9275-e719-4af1-be35-b80255ab9c53</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>"
+`;
+
+exports[`openssl should execute openssl without errors smime verify should support smime verify action using stdin 1`] = `
+"Verification successful
+<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<!DOCTYPE plist PUBLIC \\"-//Apple//DTD PLIST 1.0//EN\\" \\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\">
+<plist version=\\"1.0\\">
+<dict>
+	<key>AppIDName</key>
+	<string>LesDocksMarseille</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+	<string>B7U2JQ28D6</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2016-05-02T09:13:29Z</date>
+	<key>Platform</key>
+	<array>
+		<string>iOS</string>
+	</array>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFoTCCBImgAwIBAgIIadMmad9a8Q8wDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTYwNTAyMDgzNzI0WhcNMTcwNTAyMDgzNzI0WjCBlDEaMBgGCgmSJomT8ixkAQEMCkI3VTJKUTI4RDYxOjA4BgNVBAMMMWlQaG9uZSBEaXN0cmlidXRpb246IENhcmxpcGEgU3lzdGVtcyAoQjdVMkpRMjhENikxEzARBgNVBAsMCkI3VTJKUTI4RDYxGDAWBgNVBAoMD0NhcmxpcGEgU3lzdGVtczELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDMv9H6gI3Wd0IWovykpvFMSuySp8T0askMS3AfNlQLN7n7Q3J5ptyZ/OvH4rJcd7t4HOuy6Nac6vY0pIMmJsTc470X51ThTshTHcfoaA8MIYvuO3SDFJZBAmv84Yryzk91CrKUTucJmums2m7R+r0ial9fAitBQqNi5oYlaUlC9YzDv+tPwa20mhYC81Orhlh/ZKuNml73UCkrB2G1vunFoympnpCDfPR+OGz9WKQeyJpeuiIbzjJ0hmqqDhsbGfQYkeiW9i6XxQ1+y7wxXHfxfC8Uh+JvLMZ5X77LKmwkGmWLT3J6DBNqtBEEl7wn7eiJtLOLSqdQm+Qa3DbJxL9NAgMBAAGjggHxMIIB7TAdBgNVHQ4EFgQUmsLaBz9jQUGzXOrZHeqsXQbxqgswDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBSIJxcJqbYYYIvs67r2R1nFUlSjtzCCAQ8GA1UdIASCAQYwggECMIH/BgkqhkiG92NkBQEwgfEwgcMGCCsGAQUFBwICMIG2DIGzUmVsaWFuY2Ugb24gdGhpcyBjZXJ0aWZpY2F0ZSBieSBhbnkgcGFydHkgYXNzdW1lcyBhY2NlcHRhbmNlIG9mIHRoZSB0aGVuIGFwcGxpY2FibGUgc3RhbmRhcmQgdGVybXMgYW5kIGNvbmRpdGlvbnMgb2YgdXNlLCBjZXJ0aWZpY2F0ZSBwb2xpY3kgYW5kIGNlcnRpZmljYXRpb24gcHJhY3RpY2Ugc3RhdGVtZW50cy4wKQYIKwYBBQUHAgEWHWh0dHA6Ly93d3cuYXBwbGUuY29tL2FwcGxlY2EvME0GA1UdHwRGMEQwQqBAoD6GPGh0dHA6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2NlcnRpZmljYXRpb25hdXRob3JpdHkvd3dkcmNhLmNybDAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwMwEwYKKoZIhvdjZAYBBAEB/wQCBQAwDQYJKoZIhvcNAQEFBQADggEBAI+5Whb0zG+eeuajCnPazPtY0bcODEG4SBjWgedcv1aSHlaZ1dELdWtZXoaRfKnrOLu/duY8c3yjidVKNlMS/+stIq+BDgyc62uZhb5O1Z3MHtHCqvixutXwyzXIF+Lw6c/f1wRn/JYK6rIzxTWGGnb25sHaSscUGcL/VYm86I4tkACUCmk/qwTTJNb9PzYvubVtNv72XqT4KhgP1SGzJD9N8daID3kmctuNLdHe0CAottPuEbLOB59A/qfSrE4zExjYw66L235pmxNHE58u8Aecwkn+jzOmYwcgA6dd8aLlo0vLeIaXVjzMicM3Pn4XoIJGGdY2VuiaxL6cAIqmsW4=</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>B7U2JQ28D6.*</string>		
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>B7U2JQ28D6.com.carlipa.LesDocksMarseille</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>B7U2JQ28D6</string>
+		<key>beta-reports-active</key>
+		<true/>
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2017-05-02T08:37:24Z</date>
+	<key>Name</key>
+	<string>foo</string>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>B7U2JQ28D6</string>
+	</array>
+	<key>TeamName</key>
+	<string>Carlipa Systems</string>
+	<key>TimeToLive</key>
+	<integer>364</integer>
+	<key>UUID</key>
+	<string>a75f9275-e719-4af1-be35-b80255ab9c53</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>"
+`;
+
+exports[`openssl should execute openssl without errors x509 should support x509 action 1`] = `
+"subject=C = US, O = Apple Inc., OU = Apple Certification Authority, CN = Apple Root CA
+"
+`;
+
+exports[`openssl should execute openssl without errors x509 should support x509 action using stdin 1`] = `
+"subject=C = US, O = Apple Inc., OU = Apple Certification Authority, CN = Apple Root CA
+"
+`;
+
+exports[`openssl when invalid flags are used should throw if flags are empty 1`] = `"'flags' must not be empty"`;
+
+exports[`openssl when invalid flags are used should throw if flags are not string 1`] = `"'flags' must be a string array"`;
+
+exports[`openssl when invalid flags are used should throw if flags are not string 2`] = `"'flags' must be a string array"`;
+
+exports[`openssl when openssl binary is not found should throw if OPENSSL_PATH env is invalid 1`] = `"spawn OPENSSL_PATH-not-a-real-openssl-binary ENOENT"`;
+
+exports[`openssl when openssl binary is not found should throw if openSSLPath is invalid 1`] = `"spawn openSSLPath-not-a-real-openssl-binary ENOENT"`;
