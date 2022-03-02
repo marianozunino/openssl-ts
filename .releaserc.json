@@ -3,29 +3,30 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/npm"
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "tarBallDir": "."
+      }
     ],
     [
       "@semantic-release/git",
       {
         "assets": [
-          "docs",
+          "package-lock.json",
           "package.json",
-          "package-lock.json"
+          "CHANGELOG.md",
+          "*.tgz"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    [
-      "@semantic-release/github",
-      {
-        "assets": [
-          {
-            "path": "dist"
-          }
-        ]
-      }
-    ]
+    "@semantic-release/github"
   ],
   "branches": [
     {
