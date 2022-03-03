@@ -54,7 +54,7 @@ The second parameter is an optional object with the following properties:
 # Examples
 
 <details>
-  <summary>Using out flag</summary>
+  <summary>Using <b>out</b> flag</summary>
 
 ```ts
 import { openssl } from 'openssl-ts';
@@ -74,7 +74,7 @@ e is 65537 (0x010001)
 </details>
 
 <details>
-  <summary>Without `out` flag</summary>
+  <summary>Without <b>out</b> flag</summary>
 
 ```ts
 import { openssl } from 'openssl-ts';
@@ -102,7 +102,7 @@ MIIEowIBAAKCAQEAoNKO2MDD9TzZ9KpSJ7JAuIWDhTY5qZJGbgUltnUKqTts+A7s
 
 
 <details>
-  <summary>Using `in` flag</summary>
+  <summary>Using <b>in</b> flag</summary>
 
 ```ts
 import { openssl } from 'openssl-ts';
@@ -126,7 +126,7 @@ writing RSA key
 
 
 <details>
-  <summary>Without `in` flag and using stdin</summary>
+  <summary>Piping <b>STDIN</b> to openssl</summary>
 
 ```ts
 import { openssl } from 'openssl-ts';
