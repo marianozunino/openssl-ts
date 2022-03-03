@@ -15,8 +15,10 @@ const executeCommand = (
 
     if (stdinContent) {
       debuglog(`Sending stdin content: ${stdinContent.toString()}`);
+      childProcess.stdin.setDefaultEncoding('utf8');
       childProcess.stdin.cork();
       childProcess.stdin.write(stdinContent);
+      childProcess.stdin.end(); // no more data to send
       childProcess.stdin.uncork();
     }
 

@@ -160,4 +160,55 @@ describe('openssl', () => {
       });
     });
   });
+
+  describe('should support cms action', () => {
+    it('without stdin', async () => {
+      const output = await openssl([
+        'cms',
+        '-sign',
+        '-signer',
+        `${__dirname}/__resources__/domain.crt`,
+        '-inkey',
+        `${__dirname}/__resources__/domain.key`,
+        '-nodetach',
+        '-outform',
+        'der',
+        '-in',
+        `${__dirname}/__resources__/signme.xml`,
+      ]);
+      expect(
+        output
+          .toString('base64')
+          .startsWith(
+            'MIIFyQYJKoZIhvcNAQcCoIIFujCCBbYCAQExDTALBglghkgBZQMEAgEwggE5BgkqhkiG9w0BBwGgggEqBIIBJjxsb2dpblRpY2tldFJlcXVlc3QgdmVyc2lvbj0iMS4wIj4NCiAgPGhlYWRlcj4NCiAgICA8dW5pcXVlSWQ+MTY0NjMxNjI4ODwvdW5pcXVlSWQ+DQogICAgPGdlbmVyYXRpb25UaW1lPjIwMjItMDMtMDNUMTA6MzQ6NDguODUzLTAzOjAwPC9nZW5lcmF0aW9uVGltZT4NCiAgICA8ZXhwaXJhdGlvblRpbWU+MjAyMi0wMy0wM1QxMTozNDo0OC44NTUtMDM6MDA8L2V4cGlyYXRpb25UaW1lPg0KICA8L2hlYWRlcj4NCiAgPHNlcnZpY2U+d3Nfc3JfcGFkcm9uX2ExMzwvc2VydmljZT4NCjwvbG9naW5UaWNrZXRSZXF1ZXN0PqCCAnAwggJsMIIB0qADAgECAhRm9+mmWM7kzqxuMMl+xA8G7/KBBjANBgkqhkiG9w0BAQsFADBFMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMB4XDTIyMDMwMzE0MzQ1NFoXDTIzMDMwMzE0MzQ1NFowRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDCBojANBgkqhkiG9w0BAQEFAAOBkAAwgYwCgYQAzF0Hw/TnOlgsYzbR3iOMFgCPnQ6h0e85E21PXtNzMS//6Yez22fg4jI4GAj5ho2M7YjHz0BvVyxbp4pT4riqT2LnSb0x1wNVfHymdx7j1ygq7AlpZYc0pw+',
+          ),
+      ).toBeTruthy();
+    });
+    it('with stdin', async () => {
+      const stdin = readFileSync(`${__dirname}/__resources__/signme.xml`);
+      const output = await openssl(
+        [
+          'cms',
+          '-sign',
+          '-signer',
+          `${__dirname}/__resources__/domain.crt`,
+          '-inkey',
+          `${__dirname}/__resources__/domain.key`,
+          '-nodetach',
+          '-outform',
+          'der',
+        ],
+        {
+          stdin,
+        },
+      );
+      expect(
+        output
+          .toString('base64')
+          .startsWith(
+            'MIIFyQYJKoZIhvcNAQcCoIIFujCCBbYCAQExDTALBglghkgBZQMEAgEwggE5BgkqhkiG9w0BBwGgggEqBIIBJjxsb2dpblRpY2tldFJlcXVlc3QgdmVyc2lvbj0iMS4wIj4NCiAgPGhlYWRlcj4NCiAgICA8dW5pcXVlSWQ+MTY0NjMxNjI4ODwvdW5pcXVlSWQ+DQogICAgPGdlbmVyYXRpb25UaW1lPjIwMjItMDMtMDNUMTA6MzQ6NDguODUzLTAzOjAwPC9nZW5lcmF0aW9uVGltZT4NCiAgICA8ZXhwaXJhdGlvblRpbWU+MjAyMi0wMy0wM1QxMTozNDo0OC44NTUtMDM6MDA8L2V4cGlyYXRpb25UaW1lPg0KICA8L2hlYWRlcj4NCiAgPHNlcnZpY2U+d3Nfc3JfcGFkcm9uX2ExMzwvc2VydmljZT4NCjwvbG9naW5UaWNrZXRSZXF1ZXN0PqCCAnAwggJsMIIB0qADAgECAhRm9+mmWM7kzqxuMMl+xA8G7/KBBjANBgkqhkiG9w0BAQsFADBFMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMB4XDTIyMDMwMzE0MzQ1NFoXDTIzMDMwMzE0MzQ1NFowRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDCBojANBgkqhkiG9w0BAQEFAAOBkAAwgYwCgYQAzF0Hw/TnOlgsYzbR3iOMFgCPnQ6h0e85E21PXtNzMS//6Yez22fg4jI4GAj5ho2M7YjHz0BvVyxbp4pT4riqT2LnSb0x1wNVfHymdx7j1ygq7AlpZYc0pw+',
+          ),
+      ).toBeTruthy();
+    });
+  });
 });
