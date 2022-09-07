@@ -6,7 +6,7 @@
 [![current-version](https://img.shields.io/badge/dynamic/json?label=current-version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarianozunino%2Fopenssl-ts%2Fmaster%2Fpackage.json)](https://npmjs.com/package/openssl-ts)
 # Openssl Ts
 
-Openssl-ts is a modern openssl wrapper written in typescript with 0 dependencies.
+Openssl-ts is a modern openssl **wrapper** written in typescript with 0 dependencies.
 
 This library is not responsible of doing any filesystem operations (read/write).
 It just handles the openssl calls.
@@ -34,12 +34,12 @@ The signature is pretty simple:
 
 First parameter is an array of strings (openssl arguments).
 The second parameter is an optional object with the following properties:
-- opensslPath: path to the openssl executable.
+- `opensslPath`: path to the openssl executable.
 
   You can override this by using the `OPENSSL_PATH` environment variable as well.
 
   Default: `openssl` (must be in the PATH)
-- stdin: buffer to be passed to openssl as stdin 
+- `stdin`: buffer to be passed to openssl as stdin 
 
   This would be like using `cat` and piping the input to openssl.
 
@@ -150,6 +150,13 @@ writing RSA key
 */
 ```
 </details>
+
+<details>
+	<summary>NestJS Example</summary>
+	You can find an example of how to use this library in a NestJS project in the **examples** folder.
+	PS: Is just the same as the previous examples, but with a NestJS service.
+</details>
+
 
 
 # Tests
