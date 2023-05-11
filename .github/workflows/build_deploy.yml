@@ -15,8 +15,9 @@ jobs:
   # Build and deploy all the components
   build-deploy:
     name: Build-and-Deploy
-    runs-on: ubuntu-18.04
-
+    runs-on: ubuntu-latest
+    env:
+      OPENSSL_VER: 1.1.1k
     steps:
       # Get deploy code
       - name: Checkout

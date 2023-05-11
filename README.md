@@ -45,8 +45,7 @@ The second parameter is an optional object with the following properties:
 
   example: `cat private.key | openssl rsa -check`
 
-  Why would you want to do this?
-  Simple, sometimes you have the content already on ram and you want to pass it to openssl without the need to first write it to a file.
+  This is useful when the content is already in RAM, and you want to pass it to OpenSSL without having to write it to a file first.
 
   **Notice**: `cat` is not being used to pipe the input to openssl.
 

@@ -4,9 +4,9 @@ exports[`openssl should execute openssl without errors should execute openssl wi
 
 exports[`openssl should execute openssl without errors smime verify should support smime verify action 1`] = `
 "Verification successful
-<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
-<!DOCTYPE plist PUBLIC \\"-//Apple//DTD PLIST 1.0//EN\\" \\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\">
-<plist version=\\"1.0\\">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
 <dict>
 	<key>AppIDName</key>
 	<string>LesDocksMarseille</string>
@@ -61,9 +61,9 @@ exports[`openssl should execute openssl without errors smime verify should suppo
 
 exports[`openssl should execute openssl without errors smime verify should support smime verify action using stdin 1`] = `
 "Verification successful
-<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
-<!DOCTYPE plist PUBLIC \\"-//Apple//DTD PLIST 1.0//EN\\" \\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\">
-<plist version=\\"1.0\\">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
 <dict>
 	<key>AppIDName</key>
 	<string>LesDocksMarseille</string>
