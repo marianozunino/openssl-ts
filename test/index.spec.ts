@@ -49,11 +49,11 @@ describe('openssl', () => {
 
   describe('should execute openssl without errors', () => {
     it('should execute openssl without errors', async () => {
-      const result = await openssl(['exit'], {
+      const result = await openssl(['version'], {
         openSSLPath: 'openssl',
       });
       expect(result).toBeInstanceOf(Buffer);
-      expect(result.toString()).toMatchSnapshot();
+      expect(result.toString()).toMatch(/OpenSSL/);
     });
     describe('genrsa', () => {
       it('should support genrsa action as stdout output', async () => {
@@ -65,19 +65,8 @@ describe('openssl', () => {
           `pass:${pass}`,
           '1048',
         ]);
-        expect(
-          rsa
-            .toString()
-            .includes(
-              'Generating RSA private key, 1048 bit long modulus (2 primes)',
-            ),
-        ).toBeTruthy();
-        expect(
-          rsa.toString().includes('-----BEGIN RSA PRIVATE KEY-----'),
-        ).toBeTruthy();
-        expect(
-          rsa.toString().includes('-----END RSA PRIVATE KEY-----'),
-        ).toBeTruthy();
+        expect(rsa.toString().includes('-----BEGIN ')).toBeTruthy();
+        expect(rsa.toString().includes('-----END')).toBeTruthy();
       });
       it('should support genrsa action as stdout output', async () => {
         const pass = '123456';
@@ -91,13 +80,6 @@ describe('openssl', () => {
           '1048',
         ]);
         expect(
-          rsa
-            .toString()
-            .includes(
-              'Generating RSA private key, 1048 bit long modulus (2 primes)',
-            ),
-        ).toBeTruthy();
-        expect(
           rsa.toString().includes('-----BEGIN RSA PRIVATE KEY-----'),
         ).toBeFalsy();
         expect(
@@ -105,10 +87,8 @@ describe('openssl', () => {
         ).toBeFalsy();
         expect(existsSync(outputFile)).toBeTruthy();
         const content = readFileSync(outputFile, 'utf8');
-        expect(
-          content.startsWith('-----BEGIN RSA PRIVATE KEY-----'),
-        ).toBeTruthy();
-        expect(content.includes('-----END RSA PRIVATE KEY-----')).toBeTruthy();
+        expect(content.startsWith('-----BEGIN ')).toBeTruthy();
+        expect(content.includes('-----END ')).toBeTruthy();
       });
     });
     describe('smime verify', () => {

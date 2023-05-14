@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`openssl should execute openssl without errors should execute openssl without errors 1`] = `""`;
-
 exports[`openssl should execute openssl without errors smime verify should support smime verify action 1`] = `
 "Verification successful
 <?xml version="1.0" encoding="UTF-8"?>
